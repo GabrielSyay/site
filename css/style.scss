@@ -1,0 +1,210 @@
+/*IMPORTS*/
+@import "_colors";
+@import "_tipogra";
+@import "_functions";
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+// Definições Gerais:
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+img{
+    max-width: 100%;
+    width: 100%;
+}
+
+body {
+    background-color: $branco;  
+    border-top: solid 1.2rem $verde-escuro;
+
+}
+
+hr {
+    margin: auto;
+    width: 60%;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    border: solid .2rem #0d3a41;
+    border-radius: .1rem;
+    
+
+}
+
+// FORMATOS DE TITULOS:
+h1 {
+    @include fontProps-h1();
+}
+
+h2{
+    @include fontProps-h2();
+}
+
+h3 {
+    @include fontProps-h3();
+}
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+
+.container-center {
+    @include flex-nav(){
+       margin: .5rem;
+    }
+
+    label{
+        width: 40%;
+
+        input{
+            width: 100%;
+            height: 1.7rem;
+            border: none;
+            border-radius: $bordado;
+            padding: .2rem;
+            @include bodyText02();
+        }
+    }
+
+    .menus-center {
+        .menu-list-center {
+            @include flex-nav(){
+                gap: .5rem;
+            }
+            a {
+                @include bodyText01(){
+                    display: flex;
+                };
+                background-color: $azul-claro;
+                border-radius: $bordado;
+                color: $verde-escuro;
+                font-weight: 400;
+                padding: 1rem;
+            }
+        }
+    }
+}
+
+.navbar-center {
+    
+
+    @include flex-nav(){
+        justify-content: space-evenly;
+        
+    }
+
+    ul{
+        @include flex-nav(){
+            gap: .5rem;
+            margin-bottom: .2rem;
+        }
+
+        a{
+            @include bodyText01(){
+                display: flex;
+            };
+            
+            color: $cinza-claro-ciano;
+            background: $verde-mint;
+            border-radius: $bordado;
+            padding: .5rem;
+        }
+    }
+}
+
+.hotpage-section-container {
+    @include grid-columns();
+}
+
+.item {
+    @include flex-nav{
+        justify-content: space-evenly;
+    }
+    background: $verde-mint;
+    padding: .5rem 1.5rem;
+
+    border-radius: $bordado;
+
+    h1{
+        color: $azul-escuro;
+    }
+    p{
+        @include bodyText02();
+        color: $azul-escuro;
+    }
+
+}
+
+.item-a {
+    grid-area: a;
+}
+.item-b {
+    background-image: url(/imgs/farm.jpg);
+    background-position: center;
+    background-size: cover;
+    grid-area: b;
+    width: 300px;
+}
+.item-c {
+    grid-area: c;
+}
+.item-d {
+    background-image: url(/imgs/rem.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-area: d;
+}
+.item-e {
+    grid-area: e;
+
+    button{
+        @include flex-nav(){
+            background: $verde-escuro;
+            padding: .5rem;
+            border: none;
+            border-radius: $bordado;
+        }
+
+        a{
+            color: $branco;
+            @include bodyText01();
+        }
+    }
+}
+
+
+
+.rodape {
+    background: $azul-claro;
+    margin-top: 1.5rem;
+    border-top: $azul-escuro solid .5rem;
+    @include flex-nav(){
+        padding: 1.3rem;
+    }
+
+    .section-footer {
+        gap: 1.5rem;
+        color: $verde-escuro;
+        @include flex-nav(){
+            flex-direction: column;
+            justify-content: center;
+            align-items:flex-start;
+        }
+
+        ul{
+            border-bottom: $azul-escuro solid .2rem;
+        }
+
+        a{
+            @include bodyText02();
+            color: $azul-escuro;            
+
+            &:hover {
+                transition: .5s;
+                @include bodyText01;
+            }
+
+        }
+    }
+}

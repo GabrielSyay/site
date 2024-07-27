@@ -1,0 +1,31 @@
+// Responsividade com flex-box
+@mixin flex-nav(){
+ 
+    flex-wrap: wrap;
+    padding: 0 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @content;
+}
+
+// Responsividade com grid-layout:
+@mixin grid-columns(){
+    margin: 1rem;
+    display: grid;
+    grid-gap: .5rem;
+    max-width: 1000px;
+    margin: 0 auto;
+    height: 700px;
+    
+
+    grid-template-areas: 
+    "a a a b b"
+    "a a a b b"
+    "c c d d d"
+    "c c e e e"
+    "c c e e e";
+    
+
+
+}

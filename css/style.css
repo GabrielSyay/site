@@ -1,0 +1,240 @@
+@charset "UTF-8";
+/*IMPORTS*/
+/*
+1. **Azul Claro**: #A8D8E0  
+   - **Uso**: Fundo principal das seções do site, como cabeçalhos ou áreas de destaque. Transmite confiança e calma.
+*/
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: #e7e7e7;
+  border-top: solid 1.2rem #186150;
+}
+
+hr {
+  margin: auto;
+  width: 60%;
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  border: solid 0.2rem #0d3a41;
+  border-radius: 0.1rem;
+}
+
+h1 {
+  font-size: 48px;
+  font-weight: 600;
+  line-height: 110%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+h2 {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 110%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+h3 {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 110%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+/*||||||||||||||||||||||||||||||||||||||||||||||||||||*/
+.container-center {
+  flex-wrap: wrap;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0.5rem;
+}
+.container-center label {
+  width: 40%;
+}
+.container-center label input {
+  width: 100%;
+  height: 1.7rem;
+  border: none;
+  border-radius: 0.2rem;
+  padding: 0.2rem;
+  font-size: 14px;
+  font-weight: 400;
+  line-height-step: 150%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.container-center .menus-center .menu-list-center {
+  flex-wrap: wrap;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+}
+.container-center .menus-center .menu-list-center a {
+  font-size: 18px;
+  font-weight: 400;
+  line-height-step: 140%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  background-color: #A8D8E0;
+  border-radius: 0.2rem;
+  color: #186150;
+  font-weight: 400;
+  padding: 1rem;
+}
+.navbar-center {
+  flex-wrap: wrap;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.navbar-center ul {
+  flex-wrap: wrap;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 0.2rem;
+}
+.navbar-center ul a {
+  font-size: 18px;
+  font-weight: 400;
+  line-height-step: 140%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  display: flex;
+  color: #405e58;
+  background: #B2E4D7;
+  border-radius: 0.2rem;
+  padding: 0.5rem;
+}
+.hotpage-section-container {
+  margin: 1rem;
+  display: grid;
+  grid-gap: 0.5rem;
+  max-width: 1000px;
+  margin: 0 auto;
+  height: 700px;
+  grid-template-areas: "a a a b b" "a a a b b" "c c d d d" "c c e e e" "c c e e e";
+}
+
+.item {
+  flex-wrap: wrap;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: space-evenly;
+  background: #B2E4D7;
+  padding: 0.5rem 1.5rem;
+  border-radius: 0.2rem;
+}
+.item h1 {
+  color: #005B73;
+}
+.item p {
+  font-size: 14px;
+  font-weight: 400;
+  line-height-step: 150%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #005B73;
+}
+.item-a {
+  grid-area: a;
+}
+
+.item-b {
+  background-image: url(/imgs/farm.jpg);
+  background-position: center;
+  background-size: cover;
+  grid-area: b;
+  width: 300px;
+}
+
+.item-c {
+  grid-area: c;
+}
+
+.item-d {
+  background-image: url(/imgs/rem.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  grid-area: d;
+}
+
+.item-e {
+  grid-area: e;
+}
+.item-e button {
+  flex-wrap: wrap;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #186150;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 0.2rem;
+}
+.item-e button a {
+  color: #e7e7e7;
+  font-size: 18px;
+  font-weight: 400;
+  line-height-step: 140%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+.rodape {
+  background: #A8D8E0;
+  margin-top: 1.5rem;
+  border-top: #005B73 solid 0.5rem;
+  flex-wrap: wrap;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.3rem;
+}
+.rodape .section-footer {
+  gap: 1.5rem;
+  color: #186150;
+  flex-wrap: wrap;
+  padding: 0 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+}
+.rodape .section-footer ul {
+  border-bottom: #005B73 solid 0.2rem;
+}
+.rodape .section-footer a {
+  font-size: 14px;
+  font-weight: 400;
+  line-height-step: 150%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  color: #005B73;
+}
+.rodape .section-footer a:hover {
+  transition: 0.5s;
+  font-size: 18px;
+  font-weight: 400;
+  line-height-step: 140%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}/*# sourceMappingURL=style.css.map */
